@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/dropdown.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
     <script src="./scripts/dropdown.js" defer></script>
+    <script src="./scripts/modal.js" defer></script>
     <title>canned interface</title>
   </head>
   <body>
@@ -61,5 +63,26 @@
         </div>
       </div>
     </div>
+    <div class="modal-wrapper">
+      <button data-modal-target="#modal">open modal</button>
+      <div id="modal" class="modal">
+        <div class="modal-header">
+          <div class="title">Example Modal</div>
+          <button class="close-button" data-close-button>&times;</button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
+          dolorem! Mollitia quod quaerat rem accusantium voluptatibus ab harum
+          commodi hic dolorum reprehenderit enim voluptatem ipsa amet blanditiis
+          incidunt non itaque eos ratione, beatae ipsum ipsam officia
+          repellendus quasi illo. Iure incidunt excepturi praesentium. Autem
+          vero odio harum dolorem rem a, nesciunt nisi, facilis sit quidem enim
+          suscipit consectetur labore! Alias aliquid molestias dignissimos
+          inventore doloribus doloremque tempore culpa repellat. Esse fugiat
+          quia nihil officiis voluptas! Nesciunt exercitationem hic quam vitae.
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
   </body>
 </html>
